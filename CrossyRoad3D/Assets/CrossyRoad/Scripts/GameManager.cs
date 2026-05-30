@@ -8,4 +8,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; // Reinicia el tiempo
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reinicia la escena actual
     }
+
+    public void QuitGame()
+    {
+        Application.Quit(); // Cierra la aplicación
+    }
 }
